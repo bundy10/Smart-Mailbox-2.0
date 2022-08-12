@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import ParticleBackground from './components/background/ParticleBackground';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <> 
+    <Router>
+      <ParticleBackground className= "particles"/>
+      <div className='container'>
+            <h1 className='glitch'> 
+      <span aria-hidden="true">Smart Mail Box 2.0 <br/>  <br/>  <i className="fa-solid fa-robot fa-bounce"></i> </span>
+      Smart Mail Box 2.0  <i className="fa-solid fa-robot fa-bounce"></i></h1>
+      <span aria-hidden="true">Smart Mail Box 2.0 <br/>  <br/> </span> </div>
+      <Routes>
+        <Route></Route>
+      </Routes>
+    </Router>
+     </>
   );
 }
 
